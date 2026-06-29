@@ -33,7 +33,7 @@ public class BookDetailActivity extends AppCompatActivity {
         txtGenre.setText("Genre: " + getIntent().getStringExtra("genre"));
         
         double price = getIntent().getDoubleExtra("price", 0.0);
-        txtPrice.setText("Price: $" + price);
+        txtPrice.setText("Price: KSh " + price);
         
         txtDescription.setText("Description: " + getIntent().getStringExtra("description"));
         

@@ -24,7 +24,7 @@ public class PaymentActivity extends AppCompatActivity {
         double price = getIntent().getDoubleExtra("price", 0.0);
 
         paymentBookTitle.setText("Book: " + title);
-        paymentAmount.setText("Total to Pay: $" + price);
+        paymentAmount.setText("Total to Pay: KSh " + price);
 
         btnConfirmPayment.setOnClickListener(v -> {
             Toast.makeText(this, "Payment Successful! Thank you for buying " + title, Toast.LENGTH_LONG).show();
