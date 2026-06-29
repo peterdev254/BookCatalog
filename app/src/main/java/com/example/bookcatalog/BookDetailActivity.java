@@ -41,7 +41,10 @@ public class BookDetailActivity extends AppCompatActivity {
         imgBook.setImageResource(imageRes);
 
         btnBuy.setOnClickListener(v -> {
-            Toast.makeText(this, "Proceeding to payment for: " + getIntent().getStringExtra("title"), Toast.LENGTH_SHORT).show();
+            android.content.Intent intent = new android.content.Intent(this, PaymentActivity.class);
+            intent.putExtra("title", getIntent().getStringExtra("title"));
+            intent.putExtra("price", price);
+            startActivity(intent);
         });
     }
 }
