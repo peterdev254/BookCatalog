@@ -21,6 +21,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         listBooks = findViewById(R.id.listBooks);
+        android.widget.Button btnRegister = findViewById(R.id.btnGoToRegister);
+
+        btnRegister.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
+            startActivity(intent);
+        });
 
         books = new ArrayList<>();
         bookTitles = new ArrayList<>();

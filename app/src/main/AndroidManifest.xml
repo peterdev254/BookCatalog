@@ -11,6 +11,10 @@
         android:theme="@style/Theme.BookCatalog">
 
         <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".BookDetailActivity"
             android:exported="false" />
 
