@@ -47,6 +47,16 @@
         tools:text="Genre: Genre" />
 
     <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#D32F2F"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        tools:text="Price: $15.99" />
+
+    <TextView
         android:id="@+id/txtDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,5 +65,14 @@
         android:layout_marginTop="16dp"
         android:lineSpacingExtra="4dp"
         tools:text="Description: Book Description goes here..." />
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy Now"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"/>
 
 </LinearLayout>

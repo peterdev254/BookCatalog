@@ -7,15 +7,17 @@ public class Book {
     String genre;
     String description;
     int imageResource;
+    double price;
 
     public Book(String title, String author,
-                String genre, String description, int imageResource) {
+                String genre, String description, int imageResource, double price) {
 
         this.title = title;
         this.author = author;
         this.genre = genre;
         this.description = description;
         this.imageResource = imageResource;
+        this.price = price;
     }
 
     public String getTitle() {
@@ -36,5 +38,9 @@ public class Book {
 
     public int getImageResource() {
         return imageResource;
+    }
+
+    public double getPrice() {
+        return price;
     }
 }
